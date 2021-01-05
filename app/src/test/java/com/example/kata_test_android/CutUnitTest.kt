@@ -15,6 +15,10 @@ class CutUnitTest {
         assertEquals(4, 2 + 2)
     }
 
+    @Test
+    fun cutString1() {
+        assertEquals(cortarString("string Super Largo", 10), "string Sup /n er Largo")
+    }
 
     @Test
     fun cortarCadena() {

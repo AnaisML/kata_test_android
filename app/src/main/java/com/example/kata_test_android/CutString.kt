@@ -9,6 +9,9 @@ The function returns the string, but with line breaks inserted at just the right
 Like a word processor, break the line by replacing the last space in a line with a newline.
 
  */
+fun cortarString(cadena: String, size: Int): String {
+    return cadena.chunked(size).joinToString(" /n ")
+}
 
 fun cortarCadena(cadena: String?, tamaño: Int): String {
     var cadenaNueva: String = ""
