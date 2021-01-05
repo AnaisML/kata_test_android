@@ -9,3 +9,17 @@ The function returns the string, but with line breaks inserted at just the right
 Like a word processor, break the line by replacing the last space in a line with a newline.
 
  */
+
+fun cortarCadena(cadena: String?, tamaño: Int): String {
+    var cadenaNueva: String = ""
+    cadena?.let {
+        for (num in cadena.indices) {
+            if ((num != 0) && (num % tamaño == 0)) {
+                cadenaNueva += " /n " + cadena[num]
+            } else {
+                cadenaNueva += cadena[num]
+            }
+        }
+    }
+    return cadenaNueva
+}

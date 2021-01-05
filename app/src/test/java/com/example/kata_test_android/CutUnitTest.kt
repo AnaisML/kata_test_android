@@ -16,4 +16,8 @@ class CutUnitTest {
     }
 
 
+    @Test
+    fun cortarCadena() {
+        assertEquals( "string Sup /n er Largo", cortarCadena("string Super Largo", 10),)
+    }
 }
